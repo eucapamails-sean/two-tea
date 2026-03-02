@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joe's Coffee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @layer utilities {
+        .glass {
+          background: rgba(255,255,255,0.6);
+          backdrop-filter: blur(6px);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-amber-50 via-white to-amber-100 min-h-screen flex flex-col">
+    <header class="max-w-4xl mx-auto w-full p-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full bg-amber-600 flex items-center justify-center text-white font-bold text-lg">J</div>
+        <div>
+          <h1 class="text-xl font-semibold">Joe's Coffee</h1>
+          <p class="text-sm text-amber-700">Freshly brewed since 2023</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6 text-amber-800">
+        <a href="#menu" class="hover:underline">Menu</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </header>
+
+    <main class="flex-1 flex flex-col items-center justify-center">
+      <section class="w-full max-w-4xl px-6 py-12">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div class="glass p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-amber-900">Wake up with Joe's</h2>
+            <p class="mt-4 text-amber-800">Hand-roasted beans, warm smiles, and a cozy place to start your day. Visit us for a cup that feels like home.</p>
+            <div class="mt-6 flex gap-4">
+              <a href="#menu" class="inline-block bg-amber-600 text-white px-5 py-3 rounded-lg shadow hover:bg-amber-700">See Menu</a>
+              <a href="#contact" class="inline-block border border-amber-600 text-amber-700 px-5 py-3 rounded-lg hover:bg-amber-50">Contact Us</a>
+            </div>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-lg">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcdef" alt="Coffee cup" class="w-full h-64 object-cover" />
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="w-full max-w-4xl px-6 py-12">
+        <h3 class="text-2xl font-bold text-amber-900">Our Menu</h3>
+        <p class="text-amber-800 mt-2">Simple, delicious, and crafted with care.</p>
+
+        <div class="mt-6 grid md:grid-cols-3 gap-6">
+          <article class="p-6 bg-white rounded-xl shadow">
+            <h4 class="font-semibold text-lg">Classic Latte</h4>
+            <p class="text-sm text-amber-700 mt-2">Smooth espresso blended with steamed milk and a light layer of foam.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-amber-800 font-bold">$4.00</span>
+              <button class="text-sm bg-amber-600 text-white px-3 py-1 rounded">Order</button>
+            </div>
+          </article>
+
+          <article class="p-6 bg-white rounded-xl shadow">
+            <h4 class="font-semibold text-lg">Cold Brew</h4>
+            <p class="text-sm text-amber-700 mt-2">Slow-steeped for 12 hours for a smooth, rich flavor over ice.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-amber-800 font-bold">$4.50</span>
+              <button class="text-sm bg-amber-600 text-white px-3 py-1 rounded">Order</button>
+            </div>
+          </article>
+
+          <article class="p-6 bg-white rounded-xl shadow">
+            <h4 class="font-semibold text-lg">Blueberry Muffin</h4>
+            <p class="text-sm text-amber-700 mt-2">Freshly baked with juicy blueberries and a tender crumb.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-amber-800 font-bold">$2.75</span>
+              <button class="text-sm bg-amber-600 text-white px-3 py-1 rounded">Order</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="w-full max-w-4xl px-6 py-8">
+        <h3 class="text-xl font-semibold text-amber-900">About Joe</h3>
+        <p class="text-amber-800 mt-2">Joe started roasting small batches of coffee for friends and neighbors. Today, he shares that passion in every cup.</p>
+      </section>
+    </main>
+
+    <footer id="contact" class="w-full bg-amber-800 text-white mt-8">
+      <div class="max-w-4xl mx-auto px-6 py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div>
+          <h4 class="font-bold text-lg">Joe's Coffee</h4>
+          <p class="text-sm mt-1">123 Brew St, Coffeeville</p>
+          <p class="text-sm mt-1">(555) 123-4567</p>
+        </div>
+        <div class="text-sm">
+          <p>Open daily: 7am – 5pm</p>
+          <p class="mt-2">Follow us on social media for specials.</p>
+        </div>
+      </div>
+      <div class="w-full bg-amber-900 text-amber-100 text-center py-3 text-sm">© 2023 Joe's Coffee</div>
+    </footer>
+  </body>
+</html>
